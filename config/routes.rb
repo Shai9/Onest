@@ -1,13 +1,14 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get 'pages/index'
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  get '/hello', to: 'application#hello_world'
+  root 'pages#index'
 
-
-
-  
+  namespace :api do
+    namespace :v1 do
+      resources :hotels, param: :slug
+      resources :reviews, only: [:create, :destroy]
+    end
+  end
   get '*path',
       to: 'fallback#index',
       constraints: ->(req) { !req.xhr? && req.format.html? }
