@@ -48,7 +48,7 @@ module Api
       private
 
       def hotel_params
-        params.require(:hotel).permit(:name, :image_url)
+        params.permit(:name, :image_url)
       end
 
       def options
