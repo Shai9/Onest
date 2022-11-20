@@ -1,5 +1,6 @@
 import {React, useState, useEffect} from 'react'
 import axios from 'axios'
+import Hotel from './Hotel'
 
 const Hotels = () => {
   const [hotels, setHotels] = useState([])
@@ -14,8 +15,13 @@ const Hotels = () => {
     .catch( resp => console.log(resp))
   }, [hotels.length])
 
-  const list = hotels.map(item => {
-    return (<li key={item.attributes.name}>{item.attributes.name}</li>)
+  const grid = hotels.map(item => {
+    return (
+    <Hotel
+        key={item.attributes.name}
+        attributes={item.attributes}
+    />
+    )
   })
   return (
     <div className=''>
@@ -24,7 +30,7 @@ const Hotels = () => {
         <div className=''>Honest Hotel Reviews</div>
       </div>
       <div className=''>
-        <ul>{list}</ul>
+        <ul>{grid}</ul>
       </div>
     </div>
   )
