@@ -8,12 +8,18 @@ const Hotels = () => {
       //get all hotels from the api
       //update all hotels in state
     axios.get('api/v1/hotels.json')
-    .then( resp => console.log(resp))
+    .then( resp => {
+      setHotels(resp.data.data)
+    })
     .catch( resp => console.log(resp))
   }, [hotels.length])
+
+  const list = hotels.map(item => {
+    return (<li key={item.attributes.name}>{item.attributes.name}</li>)
+  })
   return (
     <div>
-      This is the hotels*index view for our app
+      <ul>{list}</ul>
     </div>
   )
 }
