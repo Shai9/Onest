@@ -25,11 +25,11 @@ const Hotels = () => {
   })
   return (
     <div className='text-center mr-auto ml-auto max-w-sm md:max-w-lg'>
-      <div className=''>
-        <h1>ONEST</h1>
-        <div className=''>Honest Hotel Reviews</div>
+      <div className='p-6'>
+        <h1 className='text-base'>ONEST</h1>
+        <div className='font-semibold text-base'>Honest Hotel Reviews</div>
       </div>
-      <div className=''>
+      <div className='grid gap-5 grid-cols-4 p-5'>
         <ul>{grid}</ul>
       </div>
     </div>
