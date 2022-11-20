@@ -24,7 +24,7 @@ const Hotels = () => {
     )
   })
   return (
-    <div className=''>
+    <div className='text-center mr-auto ml-auto max-w-sm md:max-w-lg'>
       <div className=''>
         <h1>ONEST</h1>
         <div className=''>Honest Hotel Reviews</div>
