@@ -18,8 +18,14 @@ const Hotels = () => {
     return (<li key={item.attributes.name}>{item.attributes.name}</li>)
   })
   return (
-    <div>
-      <ul>{list}</ul>
+    <div className=''>
+      <div className=''>
+        <h1>ONEST</h1>
+        <div className=''>Honest Hotel Reviews</div>
+      </div>
+      <div className=''>
+        <ul>{list}</ul>
+      </div>
     </div>
   )
 }
