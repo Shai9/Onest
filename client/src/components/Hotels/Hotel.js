@@ -26,7 +26,7 @@ const LinkWrapper = styled.div`
   height:50px;
   a {
     
-    background-color: #71b406;
+    background-color: blue;
     border-radius: 4px;
     padding: 10px 50px;
     cursor: pointer;
