@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const Card = styled.div`
   border: 1px solid #efefef;
   background: #fff;
+  border-radius: 25px;
 `
 
 const HotelLogo = styled.div`
@@ -26,7 +27,7 @@ const LinkWrapper = styled.div`
   height:50px;
   a {
     
-    background-color: blue;
+    background-color: #71b406;
     border-radius: 4px;
     padding: 10px 50px;
     cursor: pointer;
