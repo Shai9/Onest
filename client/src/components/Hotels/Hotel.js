@@ -12,6 +12,7 @@ const HotelLogo = styled.div`
   height: 50px;
   margin-right: auto;
   margin-left: auto;
+  padding-top: 7px;
   
   img {
     height: 50px;
