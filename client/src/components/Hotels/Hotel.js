@@ -6,13 +6,13 @@ import styled from 'styled-components';
 
 const Hotel = (props) => {
   return (
-    <div className=''>
-      <div className=''>
-          <img  className='' src={props.attributes.image_url}  alt={props.attributes.name}/>
+    <div className='card'>
+      <div className='hotel-logo'>
+          <img src={props.attributes.image_url}  alt={props.attributes.name}/>
       </div>
-      <div className=''>{props.attributes.name}</div>
-      <div className=''>{props.attributes.avg_score}</div>
-      <div className=''>
+      <div className='hotel-name'>{props.attributes.name}</div>
+      <div className='hotel-avg_score'>{props.attributes.avg_score}</div>
+      <div className='hotel-link'>
         <Link to={`/hotels/${props.attributes.slug}`}>View Hotel</Link>
       </div>
     </div>
