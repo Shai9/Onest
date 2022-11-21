@@ -56,7 +56,7 @@ const Hotels = () => {
         <Subheader>Honest Hotel Reviews</Subheader>
       </Header>
       <Grid>
-        <ul>{grid}</ul>
+        {grid}
       </Grid>
     </Home>
   )

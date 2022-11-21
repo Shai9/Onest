@@ -25,7 +25,7 @@ const LinkWrapper = styled.div`
   margin: 30px 0 20px 0;
   height:50px;
   a {
-    color: #fff;
+    
     background-color: #71b406;
     border-radius: 4px;
     padding: 10px 50px;
