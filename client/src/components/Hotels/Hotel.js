@@ -15,6 +15,7 @@ const HotelLogo = styled.div`
   padding-top: 7px;
   
   img {
+    height: 50px;
     width: 50px;
     border: 1px solid rgba(0,0,0,0.1);
     border-radius: 100%;
