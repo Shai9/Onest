@@ -5,11 +5,14 @@ import styled from 'styled-components';
 const Card = styled.div`
   border: 1px solid #efefef;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 12px;
 `
 
 const HotelLogo = styled.div`
   height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  
   img {
     height: 50px;
     width: 50px;
