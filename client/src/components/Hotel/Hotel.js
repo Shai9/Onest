@@ -14,7 +14,7 @@ const Column = styled.div`
   height: 100vh;
   overflow: scroll
 
-  $last-child{
+  $last-child {
     background: black;
   }
 `
