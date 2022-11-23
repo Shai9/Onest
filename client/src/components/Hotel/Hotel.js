@@ -19,7 +19,7 @@ const Column = styled.div`
   }
 `
 const Main= styled.div`
-  left-padding: 50px;
+  padding-left: 50px;
 `
 
 
