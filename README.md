@@ -19,6 +19,9 @@ This app uses:
 
 
 ## Routes
+
+This is version 1 which means its stable.
+
 ````
              Prefix Verb   URI Pattern                           Controller#Action
                root GET    /                                     pages#index
