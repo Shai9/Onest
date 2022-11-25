@@ -33,7 +33,7 @@ edit_api_v1_hotel GET    /api/v1/hotels/:slug/edit(.:format) api/v1/hotles#edit
      api_v1_reviews POST   /api/v1/reviews(.:format)             api/v1/reviews#create
       api_v1_review DELETE /api/v1/reviews/:id(.:format)         api/v1/reviews#destroy
                     GET    /*path(.:format)                      pages#index
-                    `````
+                   
                     
                     
 ## Models
