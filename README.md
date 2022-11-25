@@ -5,7 +5,7 @@ This app is intended to be a simple example of a CRUD app built with Ruby on Rai
 
 ## TECHNOLOGIES USED
 
-- This app uses:
+This app uses:
 
 - Ruby version: 2.7
 - Rails version: 7.0.3.4
@@ -19,7 +19,7 @@ This app is intended to be a simple example of a CRUD app built with Ruby on Rai
 
 
 ## Routes
-
+````
              Prefix Verb   URI Pattern                           Controller#Action
                root GET    /                                     pages#index
     api_v1_hotels GET    /api/v1/hotels(.:format)            api/v1/hotels#index
@@ -33,6 +33,7 @@ edit_api_v1_hotel GET    /api/v1/hotels/:slug/edit(.:format) api/v1/hotles#edit
      api_v1_reviews POST   /api/v1/reviews(.:format)             api/v1/reviews#create
       api_v1_review DELETE /api/v1/reviews/:id(.:format)         api/v1/reviews#destroy
                     GET    /*path(.:format)                      pages#index
+                    `````
                     
                     
 ## Models
