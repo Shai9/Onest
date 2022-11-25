@@ -36,4 +36,4 @@ edit_api_v1_hotel GET    /api/v1/hotels/:slug/edit(.:format) api/v1/hotles#edit
                    
                     
                     
-## Models
+````
