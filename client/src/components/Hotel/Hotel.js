@@ -22,11 +22,6 @@ const Main= styled.div`
   padding-left: 50px;
 `
 
-
-
-
-
-
 const Hotel = (props) => {
 
     const [hotel, setHotel] = useState({})
