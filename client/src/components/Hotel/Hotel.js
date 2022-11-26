@@ -62,13 +62,22 @@
 // } 
 // export default Hotel
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
 
-const Hotel = () => {
-  return(
-     <div>
-      This is the single hotel section
-     </div>
+const Hotel = (props) => {
+ 
+    const [hotel, setHotel] = useState({})
+    const [review, setReview] = useState({})
+
+    useEffect(() => {
+        console.log(props)
+    })
+
+    return (
+      <div>
+        This is the single hotel section
+      </div>
   )
 }
 
