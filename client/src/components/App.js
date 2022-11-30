@@ -8,7 +8,7 @@ const App = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Hotels}/>
-        <Route exact path="/hotels/:slug" component={Hotel}/>
+        <Route exact path="/https://onest-azpw.onrender.com/:slug" component={Hotel}/>
       </Switch>
     </BrowserRouter>
   )
