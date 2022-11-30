@@ -72,7 +72,7 @@ const Hotel = (props) => {
 
     useEffect(() => {
       const slug = props.match.params.slug
-        axios.get(`api/v1/hotels/${slug}`)
+        axios.get(`https://onest-azpw.onrender.com/${slug}`)
         .then(resp => console.log(resp))
         .catch(resp => console.log(resp))
     })
