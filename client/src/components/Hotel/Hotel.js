@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Header from './Header'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-const Wrapper = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr)
-`
-const Column = styled.div`
-  background: white;
-  height: 100vh;
-  overflow: scroll
+// const Wrapper = styled.div`
+//   margin-left: auto;
+//   margin-right: auto;
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr)
+// `
+// const Column = styled.div`
+//   background: white;
+//   height: 100vh;
+//   overflow: scroll
 
-  $last-child {
-    background: black;
-  }
-`
-const Main= styled.div`
-  padding-left: 50px;
-`
+//   $last-child {
+//     background: black;
+//   }
+// `
+// const Main= styled.div`
+//   padding-left: 50px;
+// `
 
 const Hotel = (props) => {
 
