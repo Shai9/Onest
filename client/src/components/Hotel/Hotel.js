@@ -72,7 +72,7 @@ const Hotel = (props) => {
 
     useEffect(() => {
       const slug = props.match.params.slug
-      const url = `api/v1/hotels/${slug}`
+      const url = `api/v1/hotels.json/${slug}`
         axios.get(url)
         .then(resp => console.log(resp))
         .catch(resp => console.log(resp))
