@@ -34,7 +34,7 @@ const Hotels = () => {
   useEffect (()=> {
       //get all hotels from the api
       //update all hotels in state
-    axios.get('https://onest-azpw.onrender.com')
+    axios.get('api/v1/hotels.json')
     .then( resp => {
       setHotels(resp.data.data)
     })

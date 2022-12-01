@@ -72,10 +72,12 @@ const Hotel = (props) => {
 
     useEffect(() => {
       const slug = props.match.params.slug
-        axios.get(`https://onest-azpw.onrender.com/${slug}`)
-        .then(resp => console.log(resp))
-        .catch(resp => console.log(resp))
-    })
+      axios.get(`api/v1/hotels.json/${slug}`)
+      .then( resp => {
+        setHotel(resp.data.data)
+      })
+      .catch( resp => console.log(resp))
+    }, [hotel.length])
 
     return (
       <div>
