@@ -61,7 +61,7 @@ const Hotel = (props) => {
       <HotelName>{props.attributes.name}</HotelName>
       <div className='hotel-avg_score'>{props.attributes.avg_score}</div>
       <LinkWrapper>
-        <Link to={`/hotels/${props.attributes.slug}`}>View Hotel</Link>
+        <Link to={`/${props.attributes.slug}`}>View Hotel</Link>
       </LinkWrapper>
     </Card>
   )
