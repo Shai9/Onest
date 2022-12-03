@@ -7,8 +7,8 @@ const App = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="https://onest-azpw.onrender.com" component={Hotels}/>
-        <Route exact path="https://onest-azpw.onrender.com/:slug" component={Hotel}/>
+        <Route exact path="api/v1/hotels" component={Hotels}/>
+        <Route exact path="api/v1/hotels/:slug" component={Hotel}/>
       </Switch>
     </BrowserRouter>
   )
